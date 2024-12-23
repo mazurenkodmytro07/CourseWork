@@ -1,0 +1,14 @@
+/Users/dmitromazurenko/projects/csharp/CourseWork3/obj/Debug/net8.0/CourseWork3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dmitromazurenko/projects/csharp/CourseWork3/obj/Debug/net8.0/CourseWork3.AssemblyInfoInputs.cache
+/Users/dmitromazurenko/projects/csharp/CourseWork3/obj/Debug/net8.0/CourseWork3.AssemblyInfo.cs
+/Users/dmitromazurenko/projects/csharp/CourseWork3/obj/Debug/net8.0/CourseWork3.csproj.CoreCompileInputs.cache
+/Users/dmitromazurenko/projects/csharp/CourseWork3/bin/Debug/net8.0/CourseWork3
+/Users/dmitromazurenko/projects/csharp/CourseWork3/bin/Debug/net8.0/CourseWork3.deps.json
+/Users/dmitromazurenko/projects/csharp/CourseWork3/bin/Debug/net8.0/CourseWork3.runtimeconfig.json
+/Users/dmitromazurenko/projects/csharp/CourseWork3/bin/Debug/net8.0/CourseWork3.dll
+/Users/dmitromazurenko/projects/csharp/CourseWork3/bin/Debug/net8.0/CourseWork3.pdb
+/Users/dmitromazurenko/projects/csharp/CourseWork3/obj/Debug/net8.0/CourseWork3.dll
+/Users/dmitromazurenko/projects/csharp/CourseWork3/obj/Debug/net8.0/refint/CourseWork3.dll
+/Users/dmitromazurenko/projects/csharp/CourseWork3/obj/Debug/net8.0/CourseWork3.pdb
+/Users/dmitromazurenko/projects/csharp/CourseWork3/obj/Debug/net8.0/CourseWork3.genruntimeconfig.cache
+/Users/dmitromazurenko/projects/csharp/CourseWork3/obj/Debug/net8.0/ref/CourseWork3.dll

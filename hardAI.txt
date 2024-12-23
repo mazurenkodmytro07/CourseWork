@@ -1,0 +1,72 @@
+МОЖНА ЗАМІНИТИ НА ЦЕЙ КОД, АЛЕ ТОДІ ШІ НЕМОЖЛИВО ОБІГРАТИ
+    private static (int, int) GetBestMove(char[,] board, char player)
+    {
+        int bestValue = int.MinValue;
+        (int, int) bestMove = (-1, -1);
+
+        for (int i = 0; i < 3; i++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                if (board[i, j] == ' ')
+                {
+                    board[i, j] = player;
+                    int moveValue = Minimax(board, 0, false, player);
+                    board[i, j] = ' ';
+
+                    if (moveValue > bestValue)
+                    {
+                        bestMove = (i, j);
+                        bestValue = moveValue;
+                    }
+                }
+            }
+        }
+        return bestMove;
+    }
+
+    private static int Minimax(char[,] board, int depth, bool isMaximizing, char player)
+    {
+        char opponent = player == 'X' ? 'O' : 'X';
+
+        if (CheckWin(board, player)) return 10 - depth;
+        if (CheckWin(board, opponent)) return depth - 10;
+        if (CheckDraw(board)) return 0;
+
+        if (isMaximizing)
+        {
+            int best = int.MinValue;
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (board[i, j] == ' ')
+                    {
+                        board[i, j] = player;
+                        best = Math.Max(best, Minimax(board, depth + 1, false, player));
+                        board[i, j] = ' ';
+                    }
+                }
+            }
+            return best;
+        }
+        else
+        {
+            int best = int.MaxValue;
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (board[i, j] == ' ')
+                    {
+                        board[i, j] = opponent;
+                        best = Math.Min(best, Minimax(board, depth + 1, true, player));
+                        board[i, j] = ' ';
+                    }
+                }
+            }
+            return best;
+        }
+    }
